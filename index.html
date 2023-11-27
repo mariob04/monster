@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monster slayer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="fighter1">
+      <h2>Fighter 1</h2>
+      <div class="progress-bar">
+        <div id="healthBar1" class="health-bar">100%</div>
+      </div>
+      <button id="attackBtn1" onclick="takeTurn(1)">Take Turn</button>
+      <button id="specialAttackBtn1" onclick="specialAttack(1)" disabled>
+        Special Attack
+      </button>
+      <button id="healBtn1" onclick="heal(1)" disabled>Heal</button>
+    </div>
+
+    <div id="fighter2">
+      <h2>Fighter 2</h2>
+      <div class="progress-bar">
+        <div id="healthBar2" class="health-bar">100%</div>
+      </div>
+      <button id="attackBtn2" onclick="takeTurn(2)">Take Turn</button>
+      <button id="specialAttackBtn2" onclick="specialAttack(2)" disabled>
+        Special Attack
+      </button>
+      <button id="healBtn2" onclick="heal(2)" disabled>Heal</button>
+    </div>
+
+    <script src="monster.js"></script>
+  </body>
+</html>
